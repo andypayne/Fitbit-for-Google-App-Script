@@ -138,7 +138,7 @@ function setLoggables(loggable) {
  */
 function getLoggables() {
   var loggable = ScriptProperties.getProperty("loggables");
-  if (loggable == null) {
+  if (loggable.length == 0) {
     loggable = LOGGABLES;
   } else {
     loggable = loggable.split(',');
